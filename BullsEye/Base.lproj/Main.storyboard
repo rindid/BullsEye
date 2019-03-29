@@ -192,6 +192,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="scoreLabel" destination="pia-EW-PEb" id="sgX-ZL-kXL"/>
                         <outlet property="slider" destination="0bc-sh-Imj" id="0eA-70-lwU"/>
                         <outlet property="targetLabel" destination="gTQ-W5-ca4" id="gSb-qr-Wac"/>
                     </connections>
