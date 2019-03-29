@@ -93,6 +93,9 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wib-rN-2No">
                                                                 <rect key="frame" x="48" y="31.5" width="71" height="30"/>
                                                                 <state key="normal" title="Start Over"/>
+                                                                <connections>
+                                                                    <action selector="startOver" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQv-19-lVu"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,7 +139,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Round:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="959-97-dq5">
-                                                                <rect key="frame" x="28" y="36.5" width="131" height="20.5"/>
+                                                                <rect key="frame" x="28" y="36" width="59" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -192,6 +195,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="xTM-lM-gBd" id="JTX-MT-FRV"/>
                         <outlet property="scoreLabel" destination="pia-EW-PEb" id="sgX-ZL-kXL"/>
                         <outlet property="slider" destination="0bc-sh-Imj" id="0eA-70-lwU"/>
                         <outlet property="targetLabel" destination="gTQ-W5-ca4" id="gSb-qr-Wac"/>
