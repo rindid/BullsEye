@@ -13,6 +13,7 @@
 		9A2326EF224B669C00AD6480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2326EE224B669C00AD6480 /* Assets.xcassets */; };
 		9A2326F2224B669C00AD6480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2326F0224B669C00AD6480 /* LaunchScreen.storyboard */; };
 		9A3B4B89224E169B00A40FA3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B4B88224E169B00A40FA3 /* AboutViewController.swift */; };
+		9A3B4B8B224E1A1700A40FA3 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 9A3B4B8A224E1A1600A40FA3 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9A2326F1224B669C00AD6480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A2326F3224B669C00AD6480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3B4B88224E169B00A40FA3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		9A3B4B8A224E1A1600A40FA3 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		9A2326E6224B669B00AD6480 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				9A3B4B8A224E1A1600A40FA3 /* BullsEye.html */,
 				9A2326E7224B669B00AD6480 /* AppDelegate.swift */,
 				9A2326E9224B669B00AD6480 /* ViewController.swift */,
 				9A2326EB224B669B00AD6480 /* Main.storyboard */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2326F2224B669C00AD6480 /* LaunchScreen.storyboard in Resources */,
+				9A3B4B8B224E1A1700A40FA3 /* BullsEye.html in Resources */,
 				9A2326EF224B669C00AD6480 /* Assets.xcassets in Resources */,
 				9A2326ED224B669B00AD6480 /* Main.storyboard in Resources */,
 			);

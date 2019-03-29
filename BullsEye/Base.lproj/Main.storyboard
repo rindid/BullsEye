@@ -216,32 +216,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f1i-2x-ooE">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="317"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuk-gY-vtt">
                                 <rect key="frame" x="314" y="325" width="39" height="30"/>
                                 <state key="normal" title="Close"/>
                                 <connections>
-                                    <action selector="close:" destination="Aze-ch-oFl" eventType="touchUpInside" id="rLi-H2-GqH"/>
+                                    <action selector="close:" destination="Aze-ch-oFl" eventType="touchUpInside" id="jX4-J1-Yk7"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfu-2v-8qQ">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="317"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="f1i-2x-ooE" firstAttribute="leading" secondItem="XDK-M8-LJb" secondAttribute="leading" id="CCF-Y9-LIE"/>
-                            <constraint firstItem="XDK-M8-LJb" firstAttribute="trailing" secondItem="f1i-2x-ooE" secondAttribute="trailing" id="Vv2-ae-dMQ"/>
-                            <constraint firstItem="Wuk-gY-vtt" firstAttribute="top" secondItem="f1i-2x-ooE" secondAttribute="bottom" constant="8" id="YmU-rg-WkC"/>
-                            <constraint firstItem="f1i-2x-ooE" firstAttribute="top" secondItem="XDK-M8-LJb" secondAttribute="top" id="cr2-ho-Zxs"/>
+                            <constraint firstItem="Wuk-gY-vtt" firstAttribute="top" secondItem="pfu-2v-8qQ" secondAttribute="bottom" constant="8" id="MkW-Dg-sWg"/>
+                            <constraint firstItem="pfu-2v-8qQ" firstAttribute="leading" secondItem="XDK-M8-LJb" secondAttribute="leading" id="O5J-F0-T7w"/>
+                            <constraint firstItem="pfu-2v-8qQ" firstAttribute="top" secondItem="XDK-M8-LJb" secondAttribute="top" id="kh3-RR-Pe8"/>
                             <constraint firstItem="Wuk-gY-vtt" firstAttribute="centerX" secondItem="ZZI-Hd-Phd" secondAttribute="centerX" id="pVd-PB-dnd"/>
                             <constraint firstItem="XDK-M8-LJb" firstAttribute="bottom" secondItem="Wuk-gY-vtt" secondAttribute="bottom" constant="20" id="rKX-f8-B5o"/>
+                            <constraint firstItem="XDK-M8-LJb" firstAttribute="trailing" secondItem="pfu-2v-8qQ" secondAttribute="trailing" id="yOc-1l-dtM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XDK-M8-LJb"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="pfu-2v-8qQ" id="cYX-92-nye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tur-BB-eam" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
